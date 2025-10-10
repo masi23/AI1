@@ -1,37 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: 100vw; */
+    color: #ffffff;
+    background-color: #0a0a0a;
 
 }
 
 header {
-    width: 10%;
+    width: 12%;
     background-color: black;
+    font-family: "Bodoni Moda", serif;
 }
 
 main {
-    width: 90%;
+    width: 88%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-bottom: 100px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 15px 10px 5px;
 }
 
@@ -49,31 +58,94 @@ h3 {
 
 p {
     font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer {
     width: 100%;
     height: 80px;
-    background-color: rgb(1, 1, 66);
+    background-color: #1f1f1f;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+footer a {
+    text-decoration: none;
+}
+
+footer a::before {
+    content: "↑ ";
+    font-weight: 700;
+    margin-right: 6px;
+}
+
 #hero-image {
     width: 100%;
 }
 
-#promo-image {
-    width: 100%;
+#img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0;
 }
 
-a, a:focus, a:visited {
+#promo-image {
+    width: 70%;
+    height: 400px;
+    object-fit: cover;
+}
+
+a,
+a:focus,
+a:visited {
     color: #fff;
 }
 
-header ul {
-    text-decoration-color: #fff;
+a:hover {
+    color: #bbb;
 }
 
+header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    padding: 20px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        width: 100%;
+        height: 60px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    footer {
+        height: 120px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+        margin: 15px 0;
+        padding: 0;
+    }
+
+    #hero-image {
+        height: 250px;
+        object-fit: cover;
+        margin: 0;
+    }
+}
