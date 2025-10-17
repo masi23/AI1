@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf0e6;
+    height: 100%;
+}
+
+.todo-wrapper {
+    background-color: #fff;
+    width: 40%;
+    min-width: 500px;
+    min-height: 40%;
+    border-radius: 8px;
+    -webkit-box-shadow: 3px 8px 24px -12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 3px 8px 24px -12px rgba(66, 68, 90, 1);
+    box-shadow: 3px 8px 24px -12px rgba(66, 68, 90, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding: 25px 0;
+}
+
+#search-bar {
+    width: 85%;
+}
+
+input {
+    border: 2px solid #d8d8d8;
+    border-radius: 5px;
+    padding-left: 5px;
+    line-height: 30px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #3399ff;
+}
+
+.list-wrapper {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.list-item {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.list-item:hover {
+    -webkit-box-shadow: 5px 5px 25px -8px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 5px 5px 25px -8px rgba(66, 68, 90, 1);
+    box-shadow: 5px 5px 40px -15px rgba(66, 68, 90, 1);;
+}
+
+button {
+    background-color: rgb(243, 81, 81);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: rgb(224, 71, 71);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+}
+
+form button {
+    background-color: #2a8beb;
+    color: #fff;
+}
+
+form button:hover {
+    background-color: #257ed6;
+}
+
+.list-item p {
+    max-width: 15%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .todo-wrapper {
+        width: 90%;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .list-wrapper {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .list-item {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    form button {
+        align-self: flex-end;
+    }
+}
