@@ -5,7 +5,7 @@
 }
 
 html {
-    height: 100%;
+    min-height: 100vh;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #edf0e6;
-    height: 100%;
+    min-height: 100%;
 }
 
 .todo-wrapper {
@@ -32,6 +32,7 @@ body {
     align-items: center;
     gap: 50px;
     padding: 25px 0;
+    margin: 50px 0;
 }
 
 #search-bar {
@@ -48,6 +49,14 @@ input {
 input:focus {
     outline: none;
     border: 2px solid #3399ff;
+}
+
+input[status="invalid"] {
+    border: 2px solid rgb(243, 81, 81);
+}
+
+#taskname-input {
+    width: 100%;
 }
 
 .list-wrapper {
@@ -70,7 +79,8 @@ input:focus {
 .list-item:hover {
     -webkit-box-shadow: 5px 5px 25px -8px rgba(66, 68, 90, 1);
     -moz-box-shadow: 5px 5px 25px -8px rgba(66, 68, 90, 1);
-    box-shadow: 5px 5px 40px -15px rgba(66, 68, 90, 1);;
+    box-shadow: 5px 5px 40px -15px rgba(66, 68, 90, 1);
+    ;
 }
 
 button {
@@ -90,6 +100,7 @@ form {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
     width: 85%;
 }
 
@@ -106,6 +117,10 @@ form button:hover {
     max-width: 15%;
 }
 
+.list-wrapper>p {
+    text-align: center;
+    font-size: 15px;
+}
 
 @media screen and (max-width: 900px) {
     .todo-wrapper {

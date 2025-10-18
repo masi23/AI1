@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="todo-wrapper">
-        <input type="text" name="search-bar" id="search-bar" placeholder="Szukaj ">
-        <div class="list-wrapper">
-            <div class="list-item">
-                <input type="checkbox" name="" id="">
-                <p>first task</p>
-                <p>01.01.2026</p>
-                <button>Usuń</button>
-            </div>
-            <div class="list-item">
-                <input type="checkbox" name="" id="">
-                <p>first task</p>
-                <p>01.01.2026</p>
-                <button>Usuń</button>
-            </div>
-            <div class="list-item">
-                <input type="checkbox" name="" id="">
-                <p>first task</p>
-                <p>01.01.2026</p>
-                <button>Usuń</button>
-            </div>
-        </div>
-        <form>
-            <input type="text" placeholder="Do zrobienia">
-            <input type="datetime-local" name="data" id="data">
-            <button>Zapisz</button>
-        </form>
+      <input
+        type="text"
+        name="search-bar"
+        id="search-bar"
+        placeholder="Szukaj "
+      />
+      <div class="list-wrapper">
+        <p>Dodaj coś do listy...</p>
+      </div>
+      <form>
+        <input id="taskname-input" type="text" placeholder="Do zrobienia" />
+        <input type="date" name="data" id="data" />
+        <button id="form-button">Zapisz</button>
+      </form>
     </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
