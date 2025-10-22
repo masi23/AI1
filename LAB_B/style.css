@@ -122,6 +122,12 @@ form button:hover {
     font-size: 15px;
 }
 
+mark {
+    background-color: gold;
+    color: #000;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 900px) {
     .todo-wrapper {
         width: 90%;
