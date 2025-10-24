@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b3b3b;
+}
+
+.map-wrapper {
+  height: 50%;
+  width: 50%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls button {
+  width: 50%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  border: 3px solid green;
+}
