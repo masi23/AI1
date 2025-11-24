@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <div class="search-section">
+      <div class="input-wrapper">
+        <label for="city-input">Wprowadź miejscowość</label>
+        <input type="text" name="city-input" id="city-input" />
+      </div>
+      <button id="submit-button">Pogoda</button>
+    </div>
+    <div class="display-section">
+      <div class="current-weather">
+        <div class="main-info">
+          <div class="location-info">
+            <p class="city">Szczecin</p>
+            <p class="country-code">PL</p>
+            <p class="timezone">UTC+2</p>
+          </div>
+          <div class="temp-info">
+            <p class="temp-main">1°C</p>
+            <p class="temp-felt">Odczuwalne: 0°C</p>
+          </div>
+        </div>
+
+        <div class="extra-info">
+          <p class="info-label">Ciśnienie</p>
+          <p class="pressure">1001 hPa</p>
+          <p class="info-label">Wilgotność</p>
+          <p class="humidity">68%</p>
+          <p class="info-label">Temp. min</p>
+          <p class="temp-min">0°C</p>
+          <p class="info-label">Temp. max</p>
+          <p class="temp-max">2°C</p>
+        </div>
+      </div>
+      <div class="longterm-weather"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
