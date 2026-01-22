@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
@@ -15,8 +15,12 @@
       <button id="submit-button">Pogoda</button>
     </div>
     <div class="display-section">
-      <div class="current-weather">
+      <h2 class="typeCityQuery">
+        Wyszukaj miasto aby wyświetlić aktualną pogodę ⛅
+      </h2>
+      <div style="visibility: hidden" class="current-weather">
         <div class="main-info">
+          <p class="card-title">Aktualna pogoda</p>
           <div class="location-info">
             <p class="city">Szczecin</p>
             <p class="country-code">PL</p>
@@ -25,6 +29,7 @@
           <div class="temp-info">
             <p class="temp-main">1°C</p>
             <p class="temp-felt">Odczuwalne: 0°C</p>
+            <p class="temp-desc">moderate rain</p>
           </div>
         </div>
 
@@ -39,8 +44,14 @@
           <p class="temp-max">2°C</p>
         </div>
       </div>
-      <div class="longterm-weather"></div>
+      <h3>Pogoda długoterminowa</h3>
+      <div class="longterm-weather">
+        <div class="scroll-area">
+          <p class="typeCityQuery">Wyszukaj miasto, aby wyświetlić pogodę ⛅</p>
+        </div>
+      </div>
     </div>
   </body>
+  <script src="js/apiKey.js"></script>
   <script src="js/script.js"></script>
 </html>
